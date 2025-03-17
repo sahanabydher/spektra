@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Blog - Quality Assurance Journey</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="blog.css" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="text-center py-4 monochrome-header">
+    <div class="container">
+      <h1 class="display-4">My Blog: Journey into Quality Assurance</h1>
+      <p class="lead">Exploring challenges, growth, and strategies in QA</p>
+    </div>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark monochrome-navbar">
+    <div class="container">
+      <!-- Blog Title as Hyperlink -->
+      <a href="#home" class="navbar-brand mb-0">My Blog</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <!-- Blog Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="blogDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Blog
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="blogDropdown">
+              <li><a class="dropdown-item" href="https://www.geeksforgeeks.org/software-engineering-software-quality-assurance/" target="_blank">QA Basics</a></li>
+              <li><a class="dropdown-item" href="https://www.geeksforgeeks.org/top-new-technology-trends/" target="_blank">Advanced Techniques</a></li>
+              <li><a class="dropdown-item" href="https://www.pewresearch.org/tools-and-resources/" target="_blank">Tools and Resources</a></li>
+            </ul>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container my-5" id="home">
+    <div class="row">
+      <!-- Sidebar Left: Search Bar -->
+      <aside class="col-md-3">
+        <div class="p-4 bg-light rounded monochrome-sidebar">
+          <h3>Search</h3>
+          <form>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search posts..." aria-label="Search blog">
+              <button class="btn btn-primary" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </aside>
+
+      <!-- Blog Posts (Center) -->
+      <section class="col-md-6" id="blog">
+        <!-- Blog Post 1 -->
+        <div class="card mb-4 monochrome-card">
+          <img src="blog-image1.jpg" class="card-img-top img-fluid" alt="Blog Post 1">
+          <div class="card-body">
+            <h2 class="card-title">Lessons from My First Interview</h2>
+            <p class="card-subtitle text-muted">March 10, 2025</p>
+            <p class="card-text">From preparing for behavioral questions to managing stress, my journey began with valuable lessons...</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+        <!-- Blog Post 2 -->
+        <div class="card mb-4 monochrome-card">
+          <img src="blog-image2.jpg" class="card-img-top img-fluid" alt="Blog Post 2">
+          <div class="card-body">
+            <h2 class="card-title">Embracing Challenges in QA</h2>
+            <p class="card-subtitle text-muted">March 12, 2025</p>
+            <p class="card-text">In a field where precision matters, every challenge taught me resilience and growth...</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+        <!-- Blog Post 3 -->
+        <div class="card mb-4 monochrome-card">
+          <img src="blog-image3.jpg" class="card-img-top img-fluid" alt="Blog Post 3">
+          <div class="card-body">
+            <h2 class="card-title">Key Strategies for QA Success</h2>
+            <p class="card-subtitle text-muted">March 14, 2025</p>
+            <p class="card-text">Structured testing and clear communication paved the way for successful projects...</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sidebar Right: Recent Posts -->
+      <aside class="col-md-3">
+        <div class="sticky-top" style="top: 20px;">
+          <!-- Recent Posts List (Vertical Stack) -->
+          <div class="recent-posts monochrome-sidebar">
+            <h3>Recent Posts</h3>
+            <div class="recent-post mb-4">
+              <a href="recent-post1.html">
+                <img src="recent-image1.jpg" class="img-fluid" alt="Top 5 Testing Tools">
+              </a>
+              <div class="recent-post-info mt-2">
+                <h5><a href="recent-post1.html" class="text-dark text-decoration-none">Top 5 Testing Tools</a></h5>
+                <p class="text-muted small">March 5, 2025</p>
+              </div>
+            </div>
+            <div class="recent-post mb-4">
+              <a href="recent-post2.html">
+                <img src="recent-image2.jpg" class="img-fluid" alt="Understanding Agile QA">
+              </a>
+              <div class="recent-post-info mt-2">
+                <h5><a href="recent-post2.html" class="text-dark text-decoration-none">Understanding Agile QA</a></h5>
+                <p class="text-muted small">March 6, 2025</p>
+              </div>
+            </div>
+            <div class="recent-post mb-4">
+              <a href="recent-post3.html">
+                <img src="recent-image3.jpg" class="img-fluid" alt="Common QA Mistakes">
+              </a>
+              <div class="recent-post-info mt-2">
+                <h5><a href="recent-post3.html" class="text-dark text-decoration-none">Common QA Mistakes</a></h5>
+                <p class="text-muted small">March 7, 2025</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center monochrome-footer py-3">
+    <div class="container">
+      <p>Contact: your.email@example.com | Follow: 
+          <a href="#" class="text-light">LinkedIn</a>, 
+          <a href="#" class="text-light">Twitter</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
