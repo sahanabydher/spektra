@@ -1,0 +1,137 @@
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header-section {
+    position: relative;
+    background: url('header-background.jpg') no-repeat center center/cover;
+    min-height: 400px;
+  }
+  .header-overlay {
+    background-color: rgba(0,0,0,0.6);
+    height: 100%;
+    width: 100%;
+    padding-top: 100px;
+  }
+  .header-section h1 {
+    font-size: 3rem;
+    color: #fff;
+  }
+  .header-section p {
+    font-size: 1.5rem;
+    color: #ddd;
+  }
+  
+  .recipe-card {
+    border: none;
+    transition: transform 0.3s ease;
+  }
+  .recipe-card:hover {
+    transform: translateY(-5px);
+  }
+  .recipe-card .card-title {
+    font-family: 'Georgia', serif;
+    color: #2c3e50;
+  }
+  .recipe-card .card-text {
+    font-family: 'Arial', sans-serif;
+    color: #555;
+  }
+  .recipe-card ul {
+    padding-left: 20px;
+    color: #555;
+  }
+  
+  #categories {
+    background-color: #f2f2f2;
+  }
+  .category-card {
+    transition: transform 0.3s ease;
+  }
+  .category-card:hover {
+    transform: scale(1.05);
+  }
+  .category-card h4 {
+    color: #2c3e50;
+    margin: 0;
+  }
+
+  .recipe-form label {
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  .recipe-form .form-control {
+    border-radius: 0;
+    border: 1px solid #ccc;
+  }
+  .recipe-form .btn {
+    border-radius: 0;
+    background-color: #2c3e50;
+    border: none;
+  }
+
+  .monochrome-sidebar {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  .recent-posts h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+  }
+  .recent-post {
+    margin-bottom: 20px;
+  }
+  .recent-post img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  .recent-post img:hover {
+    transform: scale(1.05);
+  }
+  .recent-post-info h5 {
+    font-size: 1.25rem;
+    margin: 0;
+    color: #2c3e50;
+  }
+  .recent-post-info a {
+    color: #2c3e50;
+    text-decoration: none;
+  }
+  .recent-post-info a:hover {
+    text-decoration: underline;
+  }
+  
+
+  .monochrome-footer {
+    background-color: #343a40;
+    color: #ddd;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .monochrome-footer a {
+    color: #ddd;
+    text-decoration: none;
+  }
+  .monochrome-footer a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .header-section h1 {
+      font-size: 2.5rem;
+    }
+    .header-section p {
+      font-size: 1.25rem;
+    }
+  }
+  

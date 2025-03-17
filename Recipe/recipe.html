@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Delicious Recipes</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Delicious Recipes</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#recipeNavbar" aria-controls="recipeNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="recipeNavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#recipes">Recipes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#categories">Categories</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header id="home" class="header-section">
+    <div class="header-overlay">
+      <div class="container text-center text-white">
+        <h1 class="display-3">Welcome to Delicious Recipes</h1>
+        <p class="lead">Your ultimate destination for mouthwatering recipes</p>
+      </div>
+    </div>
+  </header>
+  <section id="recipes" class="py-5">
+    <div class="container">
+      <h2 class="mb-4 text-center">Featured Recipes</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card recipe-card h-100">
+            <img src="recipe1.jpg" class="card-img-top" alt="Spaghetti Bolognese">
+            <div class="card-body">
+              <h3 class="card-title">Spaghetti Bolognese</h3>
+              <h5>Ingredients:</h5>
+              <ul>
+                <li>200g spaghetti</li>
+                <li>100g minced beef</li>
+                <li>1 onion, chopped</li>
+                <li>2 cloves garlic, minced</li>
+                <li>400g canned tomatoes</li>
+              </ul>
+              <h5>Instructions:</h5>
+              <p>Cook spaghetti according to package instructions. In a pan, sauté onions and garlic; add beef until browned, then add tomatoes and simmer. Combine with spaghetti and serve.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card recipe-card h-100">
+            <img src="recipe2.jpg" class="card-img-top" alt="Chicken Curry">
+            <div class="card-body">
+              <h3 class="card-title">Chicken Curry</h3>
+              <h5>Ingredients:</h5>
+              <ul>
+                <li>500g chicken</li>
+                <li>1 onion, sliced</li>
+                <li>2 tomatoes, chopped</li>
+                <li>Spices: turmeric, cumin, coriander</li>
+                <li>200ml coconut milk</li>
+              </ul>
+              <h5>Instructions:</h5>
+              <p>Brown chicken and onions, add spices and tomatoes, simmer and finish with coconut milk. Cook until chicken is tender.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card recipe-card h-100">
+            <img src="recipe3.jpg" class="card-img-top" alt="Vegetable Stir-Fry">
+            <div class="card-body">
+              <h3 class="card-title">Vegetable Stir-Fry</h3>
+              <h5>Ingredients:</h5>
+              <ul>
+                <li>Mixed vegetables (broccoli, carrots, bell peppers)</li>
+                <li>2 tbsp soy sauce</li>
+                <li>1 tbsp sesame oil</li>
+                <li>1 clove garlic, minced</li>
+                <li>Fresh ginger, grated</li>
+              </ul>
+              <h5>Instructions:</h5>
+              <p>Heat oil in a wok, stir-fry garlic and ginger, add vegetables and soy sauce, and cook until crisp-tender.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card recipe-card h-100">
+            <img src="recipe4.jpg" class="card-img-top" alt="Pancakes">
+            <div class="card-body">
+              <h3 class="card-title">Pancakes</h3>
+              <h5>Ingredients:</h5>
+              <ul>
+                <li>1 cup flour</li>
+                <li>1 egg</li>
+                <li>1 cup milk</li>
+                <li>2 tbsp sugar</li>
+                <li>1 tsp baking powder</li>
+              </ul>
+              <h5>Instructions:</h5>
+              <p>Mix dry and wet ingredients separately, combine until smooth, and cook on a hot griddle until bubbles form. Flip and cook until golden brown.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card recipe-card h-100">
+            <img src="recipe5.jpg" class="card-img-top" alt="Chocolate Cake">
+            <div class="card-body">
+              <h3 class="card-title">Chocolate Cake</h3>
+              <h5>Ingredients:</h5>
+              <ul>
+                <li>1 1/2 cups flour</li>
+                <li>1 cup sugar</li>
+                <li>1/2 cup cocoa powder</li>
+                <li>1 tsp baking soda</li>
+                <li>1/2 cup vegetable oil</li>
+                <li>1 cup water</li>
+              </ul>
+              <h5>Instructions:</h5>
+              <p>Mix dry ingredients, then incorporate oil and water until smooth. Pour into a cake pan and bake at 350°F (175°C) for about 30 minutes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="categories" class="py-5" style="background-color: #f2f2f2;">
+    <div class="container">
+      <h2 class="mb-4 text-center">Recipe Categories</h2>
+      <div class="row text-center">
+        <div class="col-md-3 mb-3">
+          <div class="category-card p-3 bg-white border rounded">
+            <h4>Breakfast</h4>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="category-card p-3 bg-white border rounded">
+            <h4>Lunch</h4>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="category-card p-3 bg-white border rounded">
+            <h4>Dinner</h4>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="category-card p-3 bg-white border rounded">
+            <h4>Desserts</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="mb-4 text-center">Submit Your Recipe</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <form class="recipe-form">
+            <div class="mb-3">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Your Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="mb-3">
+              <label for="recipeTitle" class="form-label">Recipe Title</label>
+              <input type="text" class="form-control" id="recipeTitle" placeholder="Enter recipe title" required>
+            </div>
+            <div class="mb-3">
+              <label for="ingredients" class="form-label">Ingredients</label>
+              <textarea class="form-control" id="ingredients" rows="3" placeholder="List the ingredients" required></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="instructions" class="form-label">Instructions</label>
+              <textarea class="form-control" id="instructions" rows="5" placeholder="Enter the cooking instructions" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Submit Recipe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center monochrome-footer py-3">
+    <div class="container">
+      <p>Contact: info@deliciousrecipes.com | Follow us on 
+         <a href="#" class="text-light">Instagram</a>, 
+         <a href="#" class="text-light">Facebook</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
